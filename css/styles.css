@@ -328,7 +328,6 @@ img {
   width: 44px;
   height: 44px;
   /* outline: 1px solid tomato; */
-  /* padding: 12px 12px; */
   border-radius: 50%;
   fill: var(--social-link);
 }
@@ -362,10 +361,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: block; */
   width: 170px;
   height: 92px;
-  /* padding: 16px 32px; */
   fill: var(--social-link);
   border: 1px solid var(--social-link);
   box-sizing: border-box;
