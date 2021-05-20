@@ -12,6 +12,7 @@
   --box-border: #eeeeee;
   --social-link: #afb1b8;
   --icon-background-color: rgba(255, 255, 255, 0.1);
+  --hero-background: #c4c4c4;
 }
 
 body {
@@ -152,7 +153,8 @@ img {
     url(../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--primary-footer-background);
+  background-size: cover;
+  background-color: var(--hero-background);
 }
 
 .hero-title {
@@ -218,7 +220,11 @@ img {
 }
 
 .feature-icon {
-  padding: 25px 100px;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
@@ -316,11 +322,13 @@ img {
 }
 
 .social-icon {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   /* outline: 1px solid tomato; */
-  padding: 12px 12px;
+  /* padding: 12px 12px; */
   border-radius: 50%;
   fill: var(--social-link);
 }
@@ -328,6 +336,9 @@ img {
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--accent-color);
+}
+.social-icon:hover .social-icon-icon,
+.social-icon:focus .social-icon-icon {
   fill: var(--primary-white-color);
 }
 
@@ -348,10 +359,13 @@ img {
 }
 
 .client-icon {
-  display: block;
-  max-width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   fill: var(--social-link);
   border: 1px solid var(--social-link);
   box-sizing: border-box;
@@ -529,10 +543,11 @@ img {
 }
 
 .footer-social-icon {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px 12px;
   border-radius: 50%;
   fill: var(--primary-white-color);
   background-color: var(--icon-background-color);
@@ -541,6 +556,10 @@ img {
 .footer-social-icon:hover,
 .footer-social-icon:focus {
   background-color: var(--accent-color);
+}
+
+.footer-social-icon:hover .footer-social-icon-icon,
+.footer-social-icon:focus .footer-social-icon-icon {
   fill: var(--primary-white-color);
 }
 
